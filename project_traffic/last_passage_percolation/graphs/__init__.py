@@ -1,4 +1,4 @@
 from last_passage_percolation.graphs.vertex import Vertex
 from last_passage_percolation.graphs.graph import Graph
 from last_passage_percolation.graphs.corner import Corner
-from last_passage_percolation.graphs.SixSidedDomain import SixSidedDomain
+from last_passage_percolation.graphs.line_to_line_graph import LineToLineGraph

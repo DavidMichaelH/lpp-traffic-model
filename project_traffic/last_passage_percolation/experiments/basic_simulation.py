@@ -40,7 +40,7 @@ model.ComputeAllTraffic()
 model.PlotEmpericalCounter(plotGrid = False,colorMap = "magma")
 
 #This needs to be a file path to the folder you want your figures to save into.
-FILE_PATH_TO_SAVE_OUTPUT_FILES = 'D:/project_traffic/'
+FILE_PATH_TO_SAVE_OUTPUT_FILES = 'D:/project_traffic/figures/'
 SaveFile(FILE_PATH_TO_SAVE_OUTPUT_FILES)
  
 print("Computation finished at =", datetime.now().strftime("%I:%M %p")) 
