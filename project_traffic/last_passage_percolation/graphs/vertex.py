@@ -1,5 +1,4 @@
-#This class should probably be called VertexData since it vertex specific to a
-#vertex 
+
 class Vertex:
     
     def __init__(self):
