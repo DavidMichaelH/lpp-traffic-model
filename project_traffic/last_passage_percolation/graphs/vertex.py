@@ -1,4 +1,4 @@
-#This class should probably be called VertexData since it vertex specific to a
+#This class should probably be called VertexData since its data specific to a
 #vertex 
 class Vertex:
     
