@@ -6,6 +6,8 @@ class Graph:
         self.nodes_dict = {}
         
         
+    def getCoordinates(self):
+        return self.nodes_dict.keys()
     
     
     

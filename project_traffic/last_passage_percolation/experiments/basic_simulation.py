@@ -28,21 +28,28 @@ def SaveFile(FILE_PATH_TO_SAVE_OUTPUT_FILES):
 startTime = time.time()
 
 
-halfSideLength = 200
+halfSideLength = 1500
 
 PredictTimeToComplete(halfSideLength)
 
 
 model = LPPLineToOriginModel(halfSideLength)
 model.SetExponentialWeights()
+ 
 model.ComputeAllTraffic()
  
 model.PlotEmpericalCounter(plotGrid = False,colorMap = "magma")
 
+ 
+
+
+
 #This needs to be a file path to the folder you want your figures to save into.
-FILE_PATH_TO_SAVE_OUTPUT_FILES = 'D:/project_traffic/figures/'
+FILE_PATH_TO_SAVE_OUTPUT_FILES = 'D:/project_traffic/version_1/figures/'
 SaveFile(FILE_PATH_TO_SAVE_OUTPUT_FILES)
  
+model.ComputeEmpericalCountAlongMiddleSegmnet()
+
 print("Computation finished at =", datetime.now().strftime("%I:%M %p")) 
  
 elapsed = time.time() - startTime
